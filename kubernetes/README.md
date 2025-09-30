@@ -37,3 +37,27 @@ This repository contains Kubernetes manifests and configuration files for deploy
    ```bash
    helm version
    ```
+
+## Helm Charts deployment
+1. Add the Bitnami repository
+   ```bash
+   helm repo add bitnami https://charts.bitnami.com/bitnami
+   helm repo update
+   ```
+2. Install the DKJPG stack
+   ```bash
+   helm install dkjpg bitnami/your-chart-name
+   ```
+3. Verify the installation
+   ```bash
+   helm list
+   ```
+4. Check the pods
+   ```bash
+   kubectl get pods
+   ```
+## Creating helm charts
+1. Create a new helm chart
+   ```bash
+   helm create your-chart-name
+   ```
