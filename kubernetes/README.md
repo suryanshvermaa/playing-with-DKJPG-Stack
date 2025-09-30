@@ -9,6 +9,7 @@ This repository contains Kubernetes manifests and configuration files for deploy
    ```bash
    kind create cluster --name dkjpg-cluster --config=kind_cluster.yaml
    ```
+   ![Kind Cluster](kind_cluster.png)
 5. Verify the cluster is running
    ```bash
    kubectl cluster-info --context kind-dkjpg-cluster
