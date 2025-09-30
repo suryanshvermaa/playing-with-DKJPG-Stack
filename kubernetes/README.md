@@ -13,3 +13,26 @@ This repository contains Kubernetes manifests and configuration files for deploy
    ```bash
    kubectl cluster-info --context kind-dkjpg-cluster
     ```
+6. Check the nodes
+   ```bash
+   kubectl get nodes
+   ```
+
+## Helm Installation
+
+1. For windows
+   ```bash
+   winget install Helm.Helm
+   ```
+2. For MacOS
+   ```bash
+   brew install kubernetes-helm
+   ```
+3. For Linux
+   ```bash
+   curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+   ```
+4. Verify the installation
+   ```bash
+   helm version
+   ```
